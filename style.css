@@ -1,0 +1,29 @@
+/*
+  specify the scroll x (or y) with the width (or height) of the images
+  In this case, the image dimension is :
+  width: 1920px;
+  height: 808px;
+*/
+
+
+
+body {
+    overflow: hidden;
+    }
+
+@keyframes bgScroll {
+    0% {
+      background-position : 0px 0px
+    }
+    100% {
+      background-position : 0px -1080px
+    }
+  }
+  
+  .scrollingBG {
+    display:block;
+    width:100vw;
+    height:100vh;
+    background-image:url("./spacebg3.png");
+    animation: bgScroll 20s linear infinite;
+  }
